@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52826C232B119F0000A5FC83 /* InvestMateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52826C222B119F0000A5FC83 /* InvestMateApp.swift */; };
+		52826C252B119F0000A5FC83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52826C242B119F0000A5FC83 /* ContentView.swift */; };
+		52826C272B119F0100A5FC83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52826C262B119F0100A5FC83 /* Assets.xcassets */; };
+		52826C2A2B119F0100A5FC83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52826C292B119F0100A5FC83 /* Preview Assets.xcassets */; };
+		52826C342B119F0100A5FC83 /* InvestMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52826C332B119F0100A5FC83 /* InvestMateTests.swift */; };
+		52826C3E2B119F0100A5FC83 /* InvestMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52826C3D2B119F0100A5FC83 /* InvestMateUITests.swift */; };
+		52826C402B119F0100A5FC83 /* InvestMateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52826C3F2B119F0100A5FC83 /* InvestMateUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52826C302B119F0100A5FC83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52826C172B119F0000A5FC83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52826C1E2B119F0000A5FC83;
+			remoteInfo = InvestMate;
+		};
+		52826C3A2B119F0100A5FC83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52826C172B119F0000A5FC83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52826C1E2B119F0000A5FC83;
+			remoteInfo = InvestMate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52826C1F2B119F0000A5FC83 /* InvestMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52826C222B119F0000A5FC83 /* InvestMateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestMateApp.swift; sourceTree = "<group>"; };
+		52826C242B119F0000A5FC83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		52826C262B119F0100A5FC83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52826C292B119F0100A5FC83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52826C2F2B119F0100A5FC83 /* InvestMateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvestMateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52826C332B119F0100A5FC83 /* InvestMateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestMateTests.swift; sourceTree = "<group>"; };
+		52826C392B119F0100A5FC83 /* InvestMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvestMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52826C3D2B119F0100A5FC83 /* InvestMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestMateUITests.swift; sourceTree = "<group>"; };
+		52826C3F2B119F0100A5FC83 /* InvestMateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestMateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52826C1C2B119F0000A5FC83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52826C2C2B119F0100A5FC83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52826C362B119F0100A5FC83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52826C162B119F0000A5FC83 = {
+			isa = PBXGroup;
+			children = (
+				52826C212B119F0000A5FC83 /* InvestMate */,
+				52826C322B119F0100A5FC83 /* InvestMateTests */,
+				52826C3C2B119F0100A5FC83 /* InvestMateUITests */,
+				52826C202B119F0000A5FC83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52826C202B119F0000A5FC83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52826C1F2B119F0000A5FC83 /* InvestMate.app */,
+				52826C2F2B119F0100A5FC83 /* InvestMateTests.xctest */,
+				52826C392B119F0100A5FC83 /* InvestMateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52826C212B119F0000A5FC83 /* InvestMate */ = {
+			isa = PBXGroup;
+			children = (
+				52826C222B119F0000A5FC83 /* InvestMateApp.swift */,
+				52826C242B119F0000A5FC83 /* ContentView.swift */,
+				52826C262B119F0100A5FC83 /* Assets.xcassets */,
+				52826C282B119F0100A5FC83 /* Preview Content */,
+			);
+			path = InvestMate;
+			sourceTree = "<group>";
+		};
+		52826C282B119F0100A5FC83 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				52826C292B119F0100A5FC83 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52826C322B119F0100A5FC83 /* InvestMateTests */ = {
+			isa = PBXGroup;
+			children = (
+				52826C332B119F0100A5FC83 /* InvestMateTests.swift */,
+			);
+			path = InvestMateTests;
+			sourceTree = "<group>";
+		};
+		52826C3C2B119F0100A5FC83 /* InvestMateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52826C3D2B119F0100A5FC83 /* InvestMateUITests.swift */,
+				52826C3F2B119F0100A5FC83 /* InvestMateUITestsLaunchTests.swift */,
+			);
+			path = InvestMateUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52826C1E2B119F0000A5FC83 /* InvestMate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52826C432B119F0100A5FC83 /* Build configuration list for PBXNativeTarget "InvestMate" */;
+			buildPhases = (
+				52826C1B2B119F0000A5FC83 /* Sources */,
+				52826C1C2B119F0000A5FC83 /* Frameworks */,
+				52826C1D2B119F0000A5FC83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InvestMate;
+			productName = InvestMate;
+			productReference = 52826C1F2B119F0000A5FC83 /* InvestMate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52826C2E2B119F0100A5FC83 /* InvestMateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52826C462B119F0100A5FC83 /* Build configuration list for PBXNativeTarget "InvestMateTests" */;
+			buildPhases = (
+				52826C2B2B119F0100A5FC83 /* Sources */,
+				52826C2C2B119F0100A5FC83 /* Frameworks */,
+				52826C2D2B119F0100A5FC83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52826C312B119F0100A5FC83 /* PBXTargetDependency */,
+			);
+			name = InvestMateTests;
+			productName = InvestMateTests;
+			productReference = 52826C2F2B119F0100A5FC83 /* InvestMateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52826C382B119F0100A5FC83 /* InvestMateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52826C492B119F0100A5FC83 /* Build configuration list for PBXNativeTarget "InvestMateUITests" */;
+			buildPhases = (
+				52826C352B119F0100A5FC83 /* Sources */,
+				52826C362B119F0100A5FC83 /* Frameworks */,
+				52826C372B119F0100A5FC83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52826C3B2B119F0100A5FC83 /* PBXTargetDependency */,
+			);
+			name = InvestMateUITests;
+			productName = InvestMateUITests;
+			productReference = 52826C392B119F0100A5FC83 /* InvestMateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52826C172B119F0000A5FC83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					52826C1E2B119F0000A5FC83 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					52826C2E2B119F0100A5FC83 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 52826C1E2B119F0000A5FC83;
+					};
+					52826C382B119F0100A5FC83 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 52826C1E2B119F0000A5FC83;
+					};
+				};
+			};
+			buildConfigurationList = 52826C1A2B119F0000A5FC83 /* Build configuration list for PBXProject "InvestMate" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52826C162B119F0000A5FC83;
+			productRefGroup = 52826C202B119F0000A5FC83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52826C1E2B119F0000A5FC83 /* InvestMate */,
+				52826C2E2B119F0100A5FC83 /* InvestMateTests */,
+				52826C382B119F0100A5FC83 /* InvestMateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52826C1D2B119F0000A5FC83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52826C2A2B119F0100A5FC83 /* Preview Assets.xcassets in Resources */,
+				52826C272B119F0100A5FC83 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52826C2D2B119F0100A5FC83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52826C372B119F0100A5FC83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52826C1B2B119F0000A5FC83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52826C252B119F0000A5FC83 /* ContentView.swift in Sources */,
+				52826C232B119F0000A5FC83 /* InvestMateApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52826C2B2B119F0100A5FC83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52826C342B119F0100A5FC83 /* InvestMateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52826C352B119F0100A5FC83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52826C402B119F0100A5FC83 /* InvestMateUITestsLaunchTests.swift in Sources */,
+				52826C3E2B119F0100A5FC83 /* InvestMateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52826C312B119F0100A5FC83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52826C1E2B119F0000A5FC83 /* InvestMate */;
+			targetProxy = 52826C302B119F0100A5FC83 /* PBXContainerItemProxy */;
+		};
+		52826C3B2B119F0100A5FC83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52826C1E2B119F0000A5FC83 /* InvestMate */;
+			targetProxy = 52826C3A2B119F0100A5FC83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		52826C412B119F0100A5FC83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52826C422B119F0100A5FC83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52826C442B119F0100A5FC83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InvestMate/Preview Content\"";
+				DEVELOPMENT_TEAM = ADM5VU736Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuibb.investMate.InvestMate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52826C452B119F0100A5FC83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InvestMate/Preview Content\"";
+				DEVELOPMENT_TEAM = ADM5VU736Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuibb.investMate.InvestMate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52826C472B119F0100A5FC83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ADM5VU736Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuibb.investMate.InvestMateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvestMate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InvestMate";
+			};
+			name = Debug;
+		};
+		52826C482B119F0100A5FC83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ADM5VU736Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuibb.investMate.InvestMateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvestMate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InvestMate";
+			};
+			name = Release;
+		};
+		52826C4A2B119F0100A5FC83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ADM5VU736Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuibb.investMate.InvestMateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InvestMate;
+			};
+			name = Debug;
+		};
+		52826C4B2B119F0100A5FC83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ADM5VU736Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuibb.investMate.InvestMateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InvestMate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52826C1A2B119F0000A5FC83 /* Build configuration list for PBXProject "InvestMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52826C412B119F0100A5FC83 /* Debug */,
+				52826C422B119F0100A5FC83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52826C432B119F0100A5FC83 /* Build configuration list for PBXNativeTarget "InvestMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52826C442B119F0100A5FC83 /* Debug */,
+				52826C452B119F0100A5FC83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52826C462B119F0100A5FC83 /* Build configuration list for PBXNativeTarget "InvestMateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52826C472B119F0100A5FC83 /* Debug */,
+				52826C482B119F0100A5FC83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52826C492B119F0100A5FC83 /* Build configuration list for PBXNativeTarget "InvestMateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52826C4A2B119F0100A5FC83 /* Debug */,
+				52826C4B2B119F0100A5FC83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52826C172B119F0000A5FC83 /* Project object */;
+}
