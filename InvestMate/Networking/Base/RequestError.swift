@@ -7,34 +7,37 @@
 
 import Foundation
 
-enum RequestError: Error {
+enum RequestError: Error, CustomStringConvertible {
     case encode
     case decode
     case invalidURL
+    case requestFailed
     case noResponse
     case unauthorized
     case unexpectedStatusCode
     case networkNotAvailable
     case unknown
     
-    var customMessage: String {
+    var description: String {
         switch self {
         case .encode:
-            return "Encode error"
+            return "An error occurred while encoding the request data."
         case .decode:
-            return "Decode error"
+            return "An error occurred while decoding the response data."
         case .invalidURL:
-            return "Invalid URL"
+            return "The provided URL is not valid."
+        case .requestFailed:
+            return "The API request failed. Please try again later."
         case .noResponse:
-            return "API response timeout"
+            return "The API response timed out. Please check your internet connection and try again."
         case .unauthorized:
-            return "Session expired"
+            return "Your session has expired. Please log in again."
         case .unexpectedStatusCode:
-            return "Unexpected status code"
+            return "Received an unexpected status code from the server."
         case .networkNotAvailable:
-            return "You are in offline mode!"
+            return "You are in offline mode. Please connect to the internet to proceed."
         default:
-            return "Unknown error"
+            return "An unknown error occurred."
         }
     }
 }

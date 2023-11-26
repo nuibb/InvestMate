@@ -15,19 +15,18 @@ struct RootView: View {
             VStack {
                 ScrollView(.vertical, showsIndicators: false) {
                     LazyVStack(alignment: .leading) {
-                        VStack(alignment: .leading, spacing: 4) {
+                        VStack(alignment: .leading, spacing: 8) {
                             Text(AppConstants.label1)
                                 .foregroundColor(viewModel.targetAmount.isEmpty ? Color.textBlack : Color.gray)
                             
                             TextField("Target Amount", text: $viewModel.targetAmount)
-                                .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .keyboardType(.numberPad)
                         }
                         .padding(.vertical, 8)
                         
-                        HStack(alignment: .top, spacing: 4) {
+                        HStack(alignment: .top, spacing: 8) {
                             Text(AppConstants.label2)
-                                .foregroundColor(Color.black)
+                                .foregroundColor(Color.gray)
                             
                             Spacer()
                             
@@ -35,7 +34,7 @@ struct RootView: View {
                                 ForEach(TimePeriod.allCases, id: \.self) { item in
                                     Text(item.description)
                                         .font(.callout)
-                                        .foregroundColor(Color.black)
+                                        .foregroundColor(Color.textBlack)
                                 }
                             }
                             .pickerStyle(MenuPickerStyle())
@@ -44,9 +43,9 @@ struct RootView: View {
                         }
                         .padding(.vertical, 8)
                         
-                        HStack(alignment: .top, spacing: 4) {
+                        HStack(alignment: .top, spacing: 8) {
                             Text(AppConstants.label3)
-                                .foregroundColor(Color.black)
+                                .foregroundColor(Color.gray)
                             
                             Spacer()
                             
@@ -54,7 +53,7 @@ struct RootView: View {
                                 ForEach(RiskLevel.allCases, id: \.self) { item in
                                     Text(item.description)
                                         .font(.callout)
-                                        .foregroundColor(Color.black)
+                                        .foregroundColor(Color.textBlack)
                                 }
                             }
                             .pickerStyle(MenuPickerStyle())
@@ -63,7 +62,7 @@ struct RootView: View {
                         }
                         .padding(.vertical, 8)
                         
-                        VStack(alignment: .leading, spacing: 4) {
+                        VStack(alignment: .leading, spacing: 8) {
                             Text(AppConstants.label4)
                                 .foregroundColor(viewModel.monthlyIncome.isEmpty ? Color.textBlack : Color.gray)
                             
@@ -73,7 +72,7 @@ struct RootView: View {
                         }
                         .padding(.vertical, 8)
                         
-                        VStack(alignment: .leading, spacing: 4) {
+                        VStack(alignment: .leading, spacing: 8) {
                             Text(AppConstants.label5)
                                 .foregroundColor(viewModel.monthlySavingsAmount.isEmpty ? Color.textBlack : Color.gray)
                             
@@ -91,7 +90,6 @@ struct RootView: View {
                                     Text(viewModel.responseMessage)
                                         .foregroundColor(Color.primaryColor)
                                         .font(.callout)
-                                        .fontWeight(.semibold)
                                     Spacer()
                                 }
                                 .padding()

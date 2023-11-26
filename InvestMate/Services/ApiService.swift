@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct ApiService: GPTDataFetchable {
+    static let shared = ApiService()
+    let networkMonitor: NetworkMonitor = NetworkMonitor()
+    private init() {}
+}

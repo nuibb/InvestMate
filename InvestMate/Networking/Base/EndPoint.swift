@@ -13,6 +13,7 @@ protocol Endpoint {
     var path: String { get }
     var method: RequestMethod { get }
     var header: [String:String] { get }
+    var queryItems: [URLQueryItem]? { get }
 }
 
 extension Endpoint {
@@ -31,5 +32,9 @@ extension Endpoint {
             "Authorization": accessToken,//"Bearer \(accessToken)"
             "Content-Type": "application/json"
         ]
+    }
+    
+    var queryItems: [URLQueryItem]? {
+        return nil
     }
 }

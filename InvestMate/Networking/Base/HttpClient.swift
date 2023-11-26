@@ -8,6 +8,7 @@
 import Foundation
 
 protocol HTTPClient {
+    var networkMonitor: NetworkMonitor { get }
     func upload(for url: String) async -> Swift.Result<Bool, RequestError>
     func download(for url: String) async -> Swift.Result<Bool, RequestError>
     func getRequest<T: Decodable>(endpoint: Endpoint, responseModel: T.Type) async -> Swift.Result<T, RequestError>
@@ -29,12 +30,13 @@ extension HTTPClient {
         urlComponents.scheme = endpoint.scheme
         urlComponents.host = endpoint.host
         urlComponents.path = endpoint.path
+        urlComponents.queryItems = endpoint.queryItems
         
         guard let url = urlComponents.url else {
             return .failure(.invalidURL)
         }
         
-        debugPrint(url.absoluteString)
+        Logger.log(type: .info, "[URL] absoluteString: \(url.absoluteString)")
         
         var request = URLRequest(url: url)
         request.httpMethod = endpoint.method.rawValue
@@ -43,8 +45,9 @@ extension HTTPClient {
         do {
             let (data, response) = try await URLSession.shared.data(for: request) //.data(from: url)
             return decode(data: data, response: response)
-        } catch {
-            return .failure(.unknown)
+        } catch (let error ) {
+            Logger.log(type: .error, "[API][Request] failed: \(error.localizedDescription)")
+            return .failure(.requestFailed)
         }
     }
     
@@ -58,7 +61,7 @@ extension HTTPClient {
             return .failure(.invalidURL)
         }
         
-        debugPrint(url.absoluteString)
+        Logger.log(type: .info, "[URL][Path]: \(url.absoluteString)")
         
         var request = URLRequest(url: url)
         request.httpMethod = endpoint.method.rawValue
@@ -70,13 +73,15 @@ extension HTTPClient {
             return .failure(.encode)
         }
         
-        debugPrint(String(data: payload, encoding: .utf8) ?? "")
+        Logger.log(type: .info, "[API][Payload]: \(String(data: payload, encoding: .utf8) ?? "Invalid Payload")")
         
         do {
             let (data, response) = try await URLSession.shared.upload(for: request, from: payload)
+            Logger.log(type: .error, "[API][Response]: \(response)")
             return decode(data: data, response: response)
-        } catch {
-            return .failure(.unknown)
+        } catch (let error ) {
+            Logger.log(type: .error, "[API][Request] failed: \(error.localizedDescription)")
+            return .failure(.requestFailed)
         }
     }
     
@@ -84,7 +89,7 @@ extension HTTPClient {
         guard let response = response as? HTTPURLResponse else {
             return .failure(.noResponse)
         }
-        debugPrint(response.statusCode)
+        
         switch response.statusCode {
         case 200...299:
             guard let decodedResponse = try? JSONDecoder().decode(T.self, from: data) else {

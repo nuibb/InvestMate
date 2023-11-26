@@ -7,17 +7,17 @@
 
 import Foundation
 
-enum TimePeriod: String, CustomStringConvertible, CaseIterable {
-    case three = "3"
-    case five = "5"
-    case ten = "10"
+enum TimePeriod: Int, CustomStringConvertible, CaseIterable {
+    case three = 3
+    case five = 5
+    case ten = 10
     
     var description: String {
-        return self.rawValue + " Years"
+        return String(self.rawValue) + " Years"
     }
 }
 
-enum RiskLevel: CustomStringConvertible, CaseIterable {
+enum RiskLevel: String, CustomStringConvertible, CaseIterable {
     case lowest
     case low
     case medium
@@ -53,7 +53,47 @@ final class RootViewModel: ObservableObject {
     @Published var isRequesting: Bool = false
     @Published var askInvestMateText: String = ""
     
+    let apiService: ApiService
+    
+    init(apiService: ApiService) {
+        self.apiService = apiService
+    }
+
     func getInvestmentSuggestions() {
+        let payload = CalculatePayload(financialGoal: Int(targetAmount) ?? 0,
+                                       duration: timePeriod.rawValue,
+                                       riskLevel: riskLevel.rawValue,
+                                       monthlyIncome: Int(monthlyIncome) ?? 0,
+                                       monthlySavings: Int(monthlySavingsAmount) ?? 0)
         
+        self.isRequesting = true
+        
+        Task {
+            let response = await apiService.getPromptResponse(with: payload)
+            if case .success(let data) = response {
+                DispatchQueue.main.async {
+                    self.isRequesting = false
+                    Logger.log(type: .error, "[Response][Data]: \(data)")
+                }
+            } else if case .failure(let error) = response {
+                Logger.log(type: .error, "[Request] failed: \(error.description)")
+                DispatchQueue.main.async {
+                    self.isRequesting = false
+                    self.displayMessage(error.description)
+                }
+            } else {
+                DispatchQueue.main.async {
+                    self.isRequesting = false
+                    self.displayMessage(RequestError.unknown.description)
+                }
+            }
+        }
+    }
+    
+    func displayMessage(_ msg: String) {
+        responseMessage = msg
+        Utils.after(seconds: 5.0) {
+            self.responseMessage = ""
+        }
     }
 }

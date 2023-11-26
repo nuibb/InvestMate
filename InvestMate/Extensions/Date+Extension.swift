@@ -1,5 +1,5 @@
 //
-//  String+Extension.swift
+//  Date+Extension.swift
 //  InvestMate
 //
 //  Created by Nurul Islam on 26/11/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension String {
+extension Date {
     func toString(format: String) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = format

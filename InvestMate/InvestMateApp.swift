@@ -11,7 +11,8 @@ import SwiftUI
 struct InvestMateApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView(viewModel: RootViewModel(apiService: ApiService.shared))
         }
     }
 }
+

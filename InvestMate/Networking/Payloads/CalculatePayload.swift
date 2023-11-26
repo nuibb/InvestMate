@@ -1,5 +1,5 @@
 //
-//  UIColor+Extension.swift
+//  CalculatePayload.swift
 //  InvestMate
 //
 //  Created by Nurul Islam on 25/11/23.
@@ -8,13 +8,13 @@
 import Foundation
 
 struct CalculatePayload: Encodable {
-    var financialGoal : Int
-    var duration : Int
-    var riskLevel : String
-    var monthlyIncome : String
-    var monthlySavings : String
+    var financialGoal: Int
+    var duration: Int
+    var riskLevel: String
+    var monthlyIncome: Int
+    var monthlySavings: Int
     
-    init(financialGoal: Int, duration: Int, riskLevel: String, monthlyIncome: String, monthlySavings: String) {
+    init(financialGoal: Int, duration: Int, riskLevel: String, monthlyIncome: Int, monthlySavings: Int) {
         self.financialGoal = financialGoal
         self.duration = duration
         self.riskLevel = riskLevel
